@@ -95,7 +95,41 @@ You can view and sort agents by team and/or department, along with the creation 
 - Permissions is where backend abilities are given across four categories: "Users", "Organizations", "Knowledgebase", and "Miscellanous". It's very similar to the permissions in our Roles creation.
 - Teams is where you can assign the user to any number of teams when you create the account.
 
-Let's create two employees, each with different responsibilities and levels of access to our system.
+Let's create two employees, each with different responsibilities and levels of access to our system. **Jane Doe** will be our Omniadmin and **John Doe** will be a new hire that works in Support. Once you've filled out the name, email, and username sections on the profile page, set a password. Since the emails we assign to our employees might not be real, untick the "Send the agent a password reset email" box and then untick the "Require password change at next login" box before setting a password. This allows for a permanent password that we can use indefinitely without getting locked out of our account because of email troubles. (💡 It's a really good idea to write down everyone's user and password on a Notepad file, as we'll have three accounts we're managing now and need to remember the credentials for.)
 
-Jane - admin
-John - support agent
+I created Jane by checking the "Administrator" box on the **Profile** section, giving her the Omniadmin role in both departments in the **Access** section, and ticking every unticked box in the **Permissions** section.
+<!-- I felt that adding enough pictures here to show the options on every menu would clog the flow of the demonstration. Hopefully you're familiar enough with osTicket's UI by now to be able to do this. -->
+
+I created John by adding him to the "Support" Department as a "Support Agent" in the **Access** section, unticking all boxes except for the ones that only allowed him to view things in the **Permissions** section (options 1 & 3 in "Miscellaneous"), and adding him to the Equipment team.
+
+(⚠️ After you click "Create" at the bottom of the agent creation page, the page switches to **managing** the agent you just created (a way to tell is that the "Create" button has become a "Save Changes" button). Do NOT fill in the information for the next agent and then try to create it, you must go back to the agent page where you can view all your agents and then click "Add New Agent" again.)
+
+## Configuring [End User](https://docs.osticket.com/en/latest/Agent/Users/User%20Directory.html) options
+
+Now we can control and configure who gets to submit a ticket. In a real business scenario, you might have a whitelist of all the employees and import that into osTicket to create accounts for everyone so they can see what tickets they have open and view the progress of them at any time, but for this demonstration, we will allow guest tickets and not force a login. This is a very altruistic helpdesk.
+
+Go to the **Admin Panel -> Settings -> Users** and you should find a page that looks like this:
+
+![15  user settings landing page](https://github.com/user-attachments/assets/66829314-b217-414d-830b-a500e6b1e8de)
+
+To allow guest tickets to be made, we will have the "Require registration and login to create tickets" box unticked, and I've also disabled session timeouts by changing the "User Session Timeout:" value to 0. Click "Save Changes" you're done!
+
+## Configuring SLAs ([Service Level Agreements](https://docs.osticket.com/en/latest/Admin/Manage/SLA%20Plans.html))
+
+SLAs (or Service Level Agreements) are the expected lengths of time that an administrator expects the tickets to be resolved within. It's a way to set ticket priorities based on the problem submitted and is a part of a helpdesk worker's job to work to be within. To manage SLAs within your osTicket help desk, go to the **Admin Panel -> Manage -> SLA**, and you should find yourself on a page that looks like this:
+
+![16  sla landing page](https://github.com/user-attachments/assets/78c16f3c-2c22-46c5-a048-7ba8c46b657d)
+
+Let's create a couple more SLAs to accompany the default for our examples. First, we'll make a high priority SLA for big problems that could affect the company very drastically. There are a few parts to an SLA, including:
+
+- **Grace Period**: the amount of time that a ticket can go unanswered before first contact from a helpdesk employee to the ticket opener is made.
+- **Schedule**: The time in which tickets are expected to be answered, commonly **24/7** or **24/5** (the entire week or only workdays, respectively.)
+- **Transient**: Allows the SLA to be changed on a ticket if it needs to be escalated or de-escalated in priority.
+
+![17  sla options](https://github.com/user-attachments/assets/31c20636-09f2-4494-a124-381aa8d40cc1)
+
+Next, I'll make a low-priority SLA with a grace period of 6 hours on a 24/5 schedule that is transient. We now have three SLA levels to categorize tickets with for prioritization and contractual purposes! SLAs are very important for helpdesk employees to know aboout and abide by, as customer contact is a huge part of the job. (💡 The SLA settings here aren't the only ones that can show up in a working environment. It all depends on your employer, but an example of another stipulation that could appear in an SLA is emailing the customer every day with updates until the problem is fixed.)
+
+## Configuring [Help Topics](https://docs.osticket.com/en/latest/Admin/Manage/Help%20Topic.html)
+
+
