@@ -132,4 +132,19 @@ Next, I'll make a low-priority SLA with a grace period of 6 hours on a 24/5 sche
 
 ## Configuring [Help Topics](https://docs.osticket.com/en/latest/Admin/Manage/Help%20Topic.html)
 
+Finally, we'll take a look at some of the help topics that end users can select in order to categorize their problems and help get it to the correct department faster. In order to manage your help topics, go to the Admin Panel -> Manage -> Help Topics and you should find a page that looks like this:
+
+![18  help topics landing page](https://github.com/user-attachments/assets/68991cb8-6aaa-4f80-8a62-9f1bef00178c)
+
+In order to add a new Help Topic, click "Add New Help Topic". Inside the help topic creation menu, the three categories are as shown:
+
+![19  help topic categories](https://github.com/user-attachments/assets/91349986-a114-4e8c-aa33-98e885d4a207)
+
+- **Help Topic Information** is where the basics of the help topic are configured, such as the name and if the topic is nested inside of another one.
+- **New ticket options** is where you can assign things like **default departments** and **default SLAs** to be automatically attached to tickets that are created under this help topic.
+- **Forms** is where you can assign default forms to be given to the ticket-opener to use for formatting or information purposes. Forms could hold questions that can help the IT desk know specifics about the problem to better help the user.
+
+I'll be creating a few extra help topics so we can practice delegating tickets automatically to deparments, teams, and users that would be best suited for the task.
+- Equipment Failure: A top-level help topic that includes the subtopics of printers, laptops, and phones not working. The channel to go through to get equipment repaired or replaced.
+- Account Trouble: A top-level help topic that deals with login, password, and email malfunctions or slips of memory. The channel to go through for things like password resets.
 
