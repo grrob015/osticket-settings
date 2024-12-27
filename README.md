@@ -16,6 +16,8 @@ There are lots of options that suddenly appear on your screen, but the most impo
 - The Agent Panel is where tickets are worked and everything relating to active, closed, and archived tickets is stored. There are also knowledge bases for procedures, and ways for agents to sort tickets and use the panel as an organizational tool to prioritize tickets for optimal workflows.
 - The Admin Panel is where system administration takes place. Here, you can create roles, groups, departments, and modify settings relating to how tickets are created and the classifications of problems that can be included in a ticket. Only users with administrator permissions may access the admin panel.
 
+## Configuring [Roles](https://docs.osticket.com/en/latest/Admin/Agents/Roles.html)
+
 
 
 
