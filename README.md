@@ -1,6 +1,16 @@
 # osticket-settings
 Showing post-install configuration settings like groups and user settings.
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10</b> (21H2)
+
 ## Logging into osTicket
 
 Log into the virtual machine that has the osTicket webserver installed and configured on it, and go type `localhost/osTicket`. You should find yourself on a page that looks like this:
