@@ -145,6 +145,19 @@ In order to add a new Help Topic, click "Add New Help Topic". Inside the help to
 - **Forms** is where you can assign default forms to be given to the ticket-opener to use for formatting or information purposes. Forms could hold questions that can help the IT desk know specifics about the problem to better help the user.
 
 I'll be creating a few extra help topics so we can practice delegating tickets automatically to deparments, teams, and users that would be best suited for the task.
-- Equipment Failure: A top-level help topic that includes the subtopics of printers, laptops, and phones not working. The channel to go through to get equipment repaired or replaced.
+- Equipment Failure: A top-level help topic that includes the subtopics of printers, laptops, and phones not working. The channel to go through to get equipment repaired or replaced. By default, tickets created in this category will be assigned to the "Equipment" team.
 - Account Trouble: A top-level help topic that deals with login, password, and email malfunctions or slips of memory. The channel to go through for things like password resets.
+
+![20  finished help topics](https://github.com/user-attachments/assets/aca1caef-1f95-44ad-ad94-118141f8e9f0)
+
+## Building our company
+
+Now that we have employees and a more fleshed out company system, the last step is to assign everyone to their departments and teams before we work some example tickets!
+
+- **Jane Doe**, the admin, will be a part of the "Level I Support" team as John's superior.
+- **John Doe**, the support agent, will be a part of the "Equipment" and "Level I Support" teams.
+
+The best way to configure our employees is to go to the **Admin Panel -> Agents -> Agents** and then go user agent by agent.
+
+Once you're all done, congratualtions! You've set up an osTicket webserver and database manually, configured a company to practice with, and are ready to explore the day-to-day workflow of a helpdesk agent in the [next part](https://github.com/grrob015/osticket-examples) of my osTicket project!
 
