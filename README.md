@@ -13,7 +13,7 @@ Showing post-install configuration settings like groups and user settings.
 
 ## Logging into osTicket
 
-Log into the virtual machine that has the osTicket webserver installed and configured on it, and go type `localhost/osTicket`. You should find yourself on a page that looks like this:
+Log into the virtual machine that we [previously installed](https://github.com/grrob015/osticket-setup) osTicket on, and type `localhost/osTicket` into your browser's address bar. You should find yourself on a page that looks like this:
 
 ![1  osticket landing page](https://github.com/user-attachments/assets/d60b701f-c4de-47e6-9ad5-51d4f944fabb)
 
